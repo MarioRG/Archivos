@@ -1,12 +1,12 @@
 <html>
     <head>
         <title>Archivos</title>
-        <script src="phonegap.js" type="text/javascript"></script>
+        <script src="phonegap.js"></script>
         <script>
             function ready(){
                 document.addEventListener("deviceready",function(){
                     //Leer archivo
-                    document.getElementById('leer').addEventListener("click",funtion(){
+                    document.getElementById('leer').addEventListener("click",function(){
                        
                         window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, gotFS, fail);
                     
